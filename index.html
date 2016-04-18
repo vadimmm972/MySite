@@ -16,5 +16,46 @@
 	</form>
 	<div id="mess" style="display:none;"></div>
 	<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+	<script>
+		$(function()
+		{
+			$("body").on("submit", "form.test" ,function()
+			{
+				var $login = $("input[name=login]").val();
+				var $email = $("input[name=email]").val();
+				var $message = $("textarea[name=message]").val();
+				$.post("check.php", {login : $login, email : $email, message : $message}, function(data)
+				{
+					data = jQuery.parseJSON( data );
+					if(data.res == "success")
+					{
+						$("#test").trigger("reset");
+						$("#mess").css("display", "block").append("Message : " + data.mess + "<br />Name : " + data.login + "<br />Email : " + data.email + "<br /><br />");
+					}
+					else
+					{
+						console.log(data.res);
+					}
+				});
+				return false;
+			});
+		});
+		
+		$( document ).ready(function() {
+			$.get("mess.php", function(data)
+			{
+				console.log(data);
+				data = jQuery.parseJSON( data );
+				
+				if(data.count > 0)
+				{
+					$.each( data, function() {
+						if(this.mess === undefined) return false;
+						$("#mess").css("display", "block").append("Message : " + this.mess + "<br />Name : " + this.login + "<br />Email : " + this.email + "<br /><br />");
+					});
+				}
+			});
+		});
+	</script>
 </body>
 </html>
