@@ -3,16 +3,25 @@
 <html>
 <head>
 	<title>Chat_Forum</title>
+	<style>
+
+   
+	</style>
+	<link rel="stylesheet" href="../style/style.css">
 	<input class="button" style="float:right" type="submit" name="rg" value="Edit "/>
-	<form  class="test" id="test" method="post"> <!-- добавлено форму -->
-	<label>Name:</label></br>
+</head>
+
+<body>	
+	<h1>New Chat_Forum</h1>
+	<form  class="test" id="test" method="post">
+		<label>Name:</label></br>
 		<input class="txArea" type="text" name="login" placeholder="Name"/></br>
 		<label>Email:</label></br>
 		<input class="txArea" type="text" name="email" placeholder="Email"/></br>
 		<label>Message:</label></br>
 		<textarea class="txArea" type="text" name="message" cols="22" rows="10"></textarea>
-		<input class="button" type="submit" name="done" value="Comeet "/>
 		</br>
+		<input class="button" type="submit" name="done" value="Comeet "/>
 	</form>
 	<div id="mess" style="display:none;"></div>
 	<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>

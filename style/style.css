@@ -1,0 +1,62 @@
+	body{
+		background:fixed;
+				background-repeat: no-repeat ;
+				background-image: url(../img/fon.jpg);
+				 text-shadow: 0 1px 1px rgba(255,255,255,0.9);
+					
+	}
+		.test{
+			 opacity: 0.9;
+			display:inline-block;
+			margin-left:40%;
+			text-align:center;
+			border: 4px solid #363636; 
+			width:300px;
+			background: #363636; 
+			padding: 10px;
+			border-radius:20px 20px 0 0;
+			color:#FFA500;
+			
+		}
+		
+		#mess{
+			font-family: Pompadur, 'Comic Sans MS', cursive;
+			 opacity: 0.9;
+			display:inline-block;
+			margin-left:40%;
+			text-align:center;
+			border: 4px solid #4F4F4F ; 
+			color:#CD661D;
+			width:300px;
+			background: #4F4F4F; 
+			padding: 10px;
+		}
+		 h1 {
+			font-family: Pompadur, 'Comic Sans MS', cursive;
+			text-align:center;
+			display:block;
+            text-align: center;
+            font-size: 30px;
+			 color: Blue;
+            text-shadow: 0 1px #808d93, -1px 0 #cdd2d5, -1px 2px #808d93, -2px 1px #cdd2d5, -2px 3px #808d93, -3px 2px #cdd2d5, -3px 4px #808d93, -4px 3px #cdd2d5, -4px 5px #808d93, -5px 4px #cdd2d5, -5px 6px #808d93, -6px 5px #cdd2d5, -6px 7px #808d93, -7px 6px #cdd2d5, -7px 8px #808d93, -8px 7px #cdd2d5;
+   }
+   
+   .button{
+	  
+            font-weight: 100;
+            color: white;
+            text-decoration: none;
+            padding: .8em 1em calc(.8em + 3px);
+            border-radius: 3px;
+            background: rgb(64,199,129);
+            box-shadow: 0 -3px rgb(53,167,110) inset;
+            transition: 0.2s;
+   }
+   
+   .txArea{
+	   background:#B5B5B5;
+	   font-style:italic;
+	   font-size:15px;
+	   color:#FFFF00;
+   }
+   
